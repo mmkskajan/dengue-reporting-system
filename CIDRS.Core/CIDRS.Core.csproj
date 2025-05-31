@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Modules\Applications\Models\Response\" />
+    <Folder Include="Modules\ChiefOccupants\Models\Response\" />
+    <Folder Include="Modules\ChiefOccupants\Validators\" />
+    <Folder Include="Modules\Identity\ViewModels\" />
+    <Folder Include="Modules\Identity\Validators\" />
+    <Folder Include="Modules\Identity\Services\" />
+    <Folder Include="Modules\Penalties\Extensions\" />
+    <Folder Include="Modules\Penalties\Models\" />
+    <Folder Include="Modules\Penalties\ViewModels\" />
+    <Folder Include="Modules\Penalties\Queries\" />
+    <Folder Include="Modules\PublicHealthInspectors\Models\Response\" />
+    <Folder Include="Modules\PublicHealthInspectors\Validators\" />
+    <Folder Include="Modules\Statistics\Commands\" />
+    <Folder Include="Modules\WorkItems\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation" Version="10.2.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.2.3" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CIDRS.Domain\CIDRS.Domain.csproj" />
+    <ProjectReference Include="..\CIDRS.Identity.Infrastructure\CIDRS.Identity.Infrastructure.csproj" />
+    <ProjectReference Include="..\CIDRS.Identity\CIDRS.Identity.csproj" />
+    <ProjectReference Include="..\CIDRS.Infrastructure\CIDRS.Infrastructure.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Common.Pagination\CIDRS.Shared.Common.Pagination.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Common\CIDRS.Shared.Common.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Utility.SmsManipulator\CIDRS.Shared.Utility.SmsManipulator.csproj" />
+  </ItemGroup>
+
+</Project>

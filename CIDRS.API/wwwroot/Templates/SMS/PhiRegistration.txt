@@ -1,0 +1,1 @@
+﻿Welcome {0}!\nWe have created the account for you to login CIDRS (Community Interactive Denque Reporting System) as PHI. The system will use the Username and Password details nominated during registration by Admin.\n\nCheck Email for Account Credentials.\nThank you.

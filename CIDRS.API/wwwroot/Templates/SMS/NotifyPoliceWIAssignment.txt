@@ -1,0 +1,1 @@
+﻿Hi {0}, You are now assigned as Respective Police to a Chief Occupant\n\t Name : {1} \n\t Address : {2}.\n {3} ({4} MOH Area) is Assigned as respective PHI.

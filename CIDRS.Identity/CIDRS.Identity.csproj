@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CIDRS.Identity.Domain\CIDRS.Identity.Domain.csproj" />
+    <ProjectReference Include="..\CIDRS.Identity.Infrastructure\CIDRS.Identity.Infrastructure.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Middleware.ExceptionHandler\CIDRS.Shared.Middleware.ExceptionHandler.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Utility.EmailManipulator\CIDRS.Shared.Utility.EmailManipulator.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Utility.FileManipulator\CIDRS.Shared.Utility.FileManipulator.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Utility.SmsManipulator\CIDRS.Shared.Utility.SmsManipulator.csproj" />
+  </ItemGroup>
+
+</Project>

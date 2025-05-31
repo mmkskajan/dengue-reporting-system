@@ -1,0 +1,1 @@
+﻿Hi {0}, Your Registration is steping to next level.\n following persons are assigned to assist you. \n\t Police : {1} ({2} Police Station)\n\t PHI : {3} ({4} MOH Area).

@@ -1,0 +1,1 @@
+﻿Welcome {0}!\nWe have created the Administrator account for you to login CIDRS (Community Interactive Denque Reporting System). The system will use the Username and Password details nominated during application configuration.\n\nGo to https://www.cidrs.com to login.\nThank you.

@@ -1,0 +1,1 @@
+﻿Hi {0}, Your Request to waive Penalties and Red Notices is considered and are resolved now.\n Please keep your sourroundings clean. Thank you.

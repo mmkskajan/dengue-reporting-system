@@ -1,0 +1,1 @@
+﻿Welcome {0}!\nWe have created the account for you to login CIDRS (Community Interactive Denque Reporting System) as Chief Occupant. The system will use the Username and Password details nominated during registration.\n\nUse Token : {1} \n\nfor Mobile Number Confirmation.

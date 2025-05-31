@@ -1,0 +1,1 @@
+﻿Hi {0}, As you are the respective PHI to \n Chief Occupant: \n\tName: {1}\n\t Address:{2}.\n You should Visit to his home to warn the Chief Occupant by issuing the RED Notice.\n {3} ({4} Police Station) is the respective Police.

@@ -1,0 +1,691 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CIDRS.API</name>
+    </assembly>
+    <members>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes">
+            <summary>
+            The class that defines ApiRoutes of each endpoint
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Root">
+            <summary>
+            root
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Version">
+            <summary>
+            version
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Base">
+            <summary>
+            base
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser">
+            <summary>
+            The Identity class that defines the Identity endpoint routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.LogIn">
+            <summary>
+            Login a  User
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.EmailValidation">
+            <summary>
+            Validate Email
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ResetPassword">
+            <summary>
+            reset the forgot password
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ValidatePhoneNumber">
+            <summary>
+            validate phone number
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ChangePassword">
+            <summary>
+            Change Current password
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.SetAvatar">
+            <summary>
+            Set Avatar
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.Refresh">
+            <summary>
+            refresh the token
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ForgotPassword">
+            <summary>
+            forgot password request 
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ConformEmail">
+            <summary>
+            Confirm Email 
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.CurrentUser">
+            <summary>
+            Get Current User
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ConformMobile">
+            <summary>
+            Confirm Mobile 
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ResendMobileConformToken">
+            <summary>
+            Resend Confirmation Token 
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.IdentityUser.ResendEmailConformToken">
+            <summary>
+            Resend Confirmation Token 
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.Master">
+            <summary>
+            The Master class that defines the Master endpoint routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Master.GetDistricts">
+            <summary>
+            Get Districts
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Master.GetMohAreasByDisterictId">
+            <summary>
+            Get Moh Area by District Id
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Master.GetMohAreas">
+            <summary>
+            Get Moh Area
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Master.GetPoliceStations">
+            <summary>
+            Get Police Stations
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Master.GetPoliceStationsByMohAreaId">
+            <summary>
+            Get Police Stations
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.Admin">
+            <summary>
+            The Admin class that defines the Master endpoint routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.CreateAdmin">
+            <summary>
+            Create Admin
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.GetAdmins">
+            <summary>
+            Get Admins
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.GetAdmin">
+            <summary>
+            Get Admin
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.GetAdminByUserId">
+            <summary>
+            Get Admin
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.ArchiveAdmin">
+            <summary>
+            Archive Admin
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.RestoreAdmin">
+            <summary>
+            Restore Admin
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.UpdateAdmin">
+            <summary>
+            Update Admin
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Admin.UploadAdminAvatar">
+            <summary>
+            Upload Avatar
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.PublicHealthInspector">
+            <summary>
+            Public Helth Inspeectors Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.PublicHealthInspector.RegisterPhiByAdmin">
+            <summary>
+            Register PHI
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.PublicHealthInspector.IndexPhis">
+            <summary>
+            Index PHI
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.PublicHealthInspector.ViewPhi">
+            <summary>
+            View PHI
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.PublicHealthInspector.Lookup">
+            <summary>
+            Lookup PHI
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.ChiefOccupant">
+            <summary>
+            ChiefOccupants Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ChiefOccupant.RegisterChiefOccupant">
+            <summary>
+            Register ChiefOccupant
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ChiefOccupant.IndexChiefOccupants">
+            <summary>
+            Index PHI
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ChiefOccupant.ViewChiefOccupant">
+            <summary>
+            View ChiefOccupant
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem">
+            <summary>
+            WorkItems Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem.IndexWorkItems">
+            <summary>
+            Index WorkItems
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem.GetAWorkItem">
+            <summary>
+            Get WorkItem
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem.ReAssign">
+            <summary>
+            Re-Assign WorkItem
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem.Remark">
+            <summary>
+            Add WorkItem Remark
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem.Approve">
+            <summary>
+            Approve WorkItem 
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.WorkItem.Reject">
+            <summary>
+            Reject WorkItem 
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.Police">
+            <summary>
+            Police Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Police.IndexPolices">
+            <summary>
+            Index Polices
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Police.GetAPolice">
+            <summary>
+            Get Police
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Police.Lookup">
+            <summary>
+            Police lookup
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Police.Create">
+            <summary>
+            Create Police
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication">
+            <summary>
+            Reporting Application Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.StartApplication">
+            <summary>
+            Start Application
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.GetApplication">
+            <summary>
+            Get Application
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.AddBaseSurroundingSet">
+            <summary>
+            Add Base Surrrounding Set
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.AddPublicSurroundingSet">
+            <summary>
+            Add Base Surrrounding Set
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.AddSurroundingSet">
+            <summary>
+            Add Surrrounding Set
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.GetBaseSurroundingSet">
+            <summary>
+            Add Surrrounding Set
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.ReportingApplication.CompleteApplication">
+            <summary>
+            Complete Application
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.Penalty">
+            <summary>
+            Penalties Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Penalty.Resolve">
+            <summary>
+            Resolve Penalty
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Contracts.V1.ApiRoutes.Statistics">
+            <summary>
+            Statistics Api Routes
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Statistics.GetStatistics">
+            <summary>
+            Statistics
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Statistics.GetApplicationStatisticsDetails">
+            <summary>
+            Statistics Details
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Statistics.GetEnvironmentStatisticsDetails">
+            <summary>
+            Statistics Details
+            </summary>
+        </member>
+        <member name="F:CIDRS.API.Contracts.V1.ApiRoutes.Statistics.GetPenalizationStatisticsDetails">
+            <summary>
+            Statistics Details
+            </summary>
+        </member>
+        <member name="T:CIDRS.API.Controllers.ChiefOccupants.ChiefOccupantController">
+            <summary>
+            Chief Occupants API Endpoints
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ChiefOccupants.ChiefOccupantController.RegisterChiefOccupantAsync(CIDRS.Core.Modules.ChiefOccupants.Commands.RegisterChiefOccupantCommand)">
+            <summary>
+            Register Chief Occupant Self Registratin 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ChiefOccupants.ChiefOccupantController.IndexChiefOccupantAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Index ChiefOccupant / Search ChiefOccupant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ChiefOccupants.ChiefOccupantController.ViewPhiAsync(System.Int32)">
+            <summary>
+            View ChiefOccupant
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.Identity.IdentityController">
+            <summary>
+            Identity API Endpoints
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.LogInAsync(CIDRS.Core.Modules.Identity.Commands.LogInRequestCommand)">
+            <summary>
+            LogIn Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ValidateEmailAsync(System.String)">
+            <summary>
+            Validate Email Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ResetPasswordAsync(CIDRS.Core.Modules.Identity.Commands.ResetPasswordRequestCommand)">
+            <summary>
+            Reset Password Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ValidatePhoneNumberAsync(System.String)">
+            <summary>
+            Validate Phone Number Endpoint
+            </summary>
+            <param name="phoneNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.RefreshAsync(CIDRS.Core.Modules.Identity.Commands.RefreshCommand)">
+            <summary>
+            Refresh Token Endpoint
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ChangePasswordAsync(CIDRS.Core.Modules.Identity.Commands.ChangePasswordRequestCommand)">
+            <summary>
+            Change Password Endpoint
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.SetAvatarAsync(System.String,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Set Avatar Endpoint
+            </summary>
+            <param name="userId"></param>
+            <param name="avatar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ForgotPasswordAsync(System.String)">
+            <summary>
+             Endpoint for Forgot Password and request reset password token on email
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ConformEmailAsync(CIDRS.Core.Modules.Identity.Commands.ConformEmailCommand)">
+            <summary>
+             Conform Email Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.GetCurrentUserAsync">
+            <summary>
+             Current User Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ConformMobileAsync(CIDRS.Core.Modules.Identity.Commands.ConfirmMobileCommand)">
+            <summary>
+             Conform Mobile Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ResendTokenConformMobileAsync">
+            <summary>
+             Resend Conform Mobile Token Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Identity.IdentityController.ResendTokenConformEmailAsync">
+            <summary>
+             Resend Conform Email Token Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.Masters.MasterDataController">
+            <summary>
+            Master Data API Endpoints
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Masters.MasterDataController.GetDistrictsAsync">
+            <summary>
+            Get Districts Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Masters.MasterDataController.GetMohAreasAsync">
+            <summary>
+            Get All Moh Areas Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Masters.MasterDataController.GetMohAreasAsync(System.Int32)">
+            <summary>
+            Get Moh Areas By District Id Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Masters.MasterDataController.GetPoliceStationsAsync">
+            <summary>
+            Get All Police Station Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Masters.MasterDataController.GetPoliceStationsAsync(System.Int32)">
+            <summary>
+            Get Police Station By Moh Area Id Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.Penalties.PenaltyController">
+            <summary>
+            Penalty API Endpoints
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Penalties.PenaltyController.RegisterChiefOccupantAsync(System.Int32)">
+            <summary>
+            Resolve Penalty 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.Polices.PoliceController">
+            <summary>
+            API Endpoints of Police
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Polices.PoliceController.CreatePoliceAsync(CIDRS.Core.Modules.Polices.Commands.CreatePoliceCommand)">
+            <summary>
+            Create Police Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Polices.PoliceController.GetPoliceAsync(System.Int32)">
+            <summary>
+            Get Police Endpoint
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Polices.PoliceController.LookupPhiAsync(System.Int32)">
+            <summary>
+            Lookup Police
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Polices.PoliceController.IndexPhiAsync(System.String,System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Index Police / Search Police
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.PublicHealthInspectors.PhiController">
+            <summary>
+            API Endpoint Collection of Public Health Inspectors
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.PublicHealthInspectors.PhiController.RegisterPhiAsync(CIDRS.Core.Modules.PublicHealthInspectors.Commands.RegisterPhiCommand)">
+            <summary>
+            Register PHI By Admin
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.PublicHealthInspectors.PhiController.IndexPhiAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Index PHI / Search PHI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.PublicHealthInspectors.PhiController.ViewPhiAsync(System.Int32)">
+            <summary>
+            View PHI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.PublicHealthInspectors.PhiController.LookupPhiAsync(System.Int32,System.Int32)">
+            <summary>
+            Lookup PHI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController">
+            <summary>
+            Reporting Application Endpoints
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.StartAsync(System.Nullable{System.Int32},System.Boolean)">
+            <summary>
+            Start Application
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.GetApplicationAsync(System.Int32)">
+            <summary>
+            Get Application
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.AddSurroundingSetAsync(CIDRS.Core.Modules.Applications.Models.Request.BaseSurroundingSetRequest,System.Int32)">
+            <summary>
+            Add Base Surrounding Set
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.AddSurroundingSetAsync(CIDRS.Core.Modules.Applications.Models.Request.BaseSurroundingSetRequest)">
+            <summary>
+            Add Public Surrounding Set
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.AddSurroundingSetAsync(CIDRS.Core.Modules.Applications.Models.Request.SurroundingSetRequest)">
+            <summary>
+            Add Surrounding Set
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.GetBaseSurroundingSetAsync(System.Nullable{System.Int32})">
+            <summary>
+            Get Base  Surrounding Set
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.ReportingApplications.ReportingApplicationController.CompleteAsync(System.Nullable{System.Int32},System.Boolean)">
+            <summary>
+            Complete Application
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.Statistics.StatisticsController">
+            <summary>
+            Statistics Endpoints 
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Statistics.StatisticsController.GetStatisticsAsync">
+            <summary>
+            Get Statistics
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Statistics.StatisticsController.GetStatisticsDetails(CIDRS.Core.Modules.Statistics.Models.Request.ApplicationStatisticsType,CIDRS.Core.Modules.Statistics.Models.Request.TimeFrequency,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Get Application Statistics Details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Statistics.StatisticsController.GetStatisticsDetails(CIDRS.Core.Modules.Statistics.Models.Request.EnvironmentStatus,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Get Environment Statistics Details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.Statistics.StatisticsController.GetStatisticsDetails(CIDRS.Core.Modules.Statistics.Models.Request.PenalizationStatus,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Get Penalization Statistics Details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CIDRS.API.Controllers.WorkItems.WorkItemsController">
+            <summary>
+            WorkItem Endpoints
+            </summary>
+        </member>
+        <member name="M:CIDRS.API.Controllers.WorkItems.WorkItemsController.IndexWorkItemsAsync(System.Nullable{System.Boolean},System.Nullable{CIDRS.Domain.Enums.WorkItemType},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32)">
+            <summary>
+            Index WorkItems
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.WorkItems.WorkItemsController.GetWorkItemAsync(System.Int32)">
+            <summary>
+            Get A WorkItem By Id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.WorkItems.WorkItemsController.ReAssignWorkItemAsync(CIDRS.Core.Modules.WorkItems.Commands.ReAssignWorkItemCommand)">
+            <summary>
+            Re-Assign WorkItem
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.WorkItems.WorkItemsController.RemarkWorkItemAsync(CIDRS.Core.Modules.WorkItems.Commands.AddWorkItemRemarkCommand)">
+            <summary>
+            Remark WorkItem
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.WorkItems.WorkItemsController.ApproveAsync(System.Int32)">
+            <summary>
+            Approve WorkItem
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Controllers.WorkItems.WorkItemsController.RejectAsync(System.Int32)">
+            <summary>
+            Reject WorkItem
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CIDRS.API.Startup.ConfigureDatabaseInfrastructure(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add Infrastructure services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

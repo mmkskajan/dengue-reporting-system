@@ -1,0 +1,1 @@
+﻿Welcome {0}!\nYou have joined with CIDRS (Community Interactive Denque Reporting System) as Police Officer.\nThank you.

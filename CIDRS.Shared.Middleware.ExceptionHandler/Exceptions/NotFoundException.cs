@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CIDRS.Shared.Middleware.ExceptionHandler.Exceptions
+{
+	/// <summary>
+	/// Custom exception to be used when throwing not found specific error messages to the user.
+	/// </summary>
+	public class NotFoundException : Exception
+	{
+		/// <summary>
+		/// Constructor NotFoundException
+		/// </summary>
+		public NotFoundException()
+		{
+		}
+
+		/// <summary>
+		/// Constructor NotFoundException
+		/// </summary>
+		/// <param name="message"></param>
+		public NotFoundException(string message)
+			: base(message)
+		{
+		}
+
+		/// <summary>
+		/// Constructor NotFoundException
+		/// </summary>
+		/// <param name="message"></param>
+		/// <param name="inner"></param>
+		public NotFoundException(string message, Exception inner)
+			: base(message, inner)
+		{
+		}
+	}
+}

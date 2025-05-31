@@ -1,0 +1,1 @@
+﻿Hi {0}, Your {3} photos are submitted to PHI Review.\n\n\t PHI : {1} ({2} MOH Area). \nYou will notify once PHI complete the review.

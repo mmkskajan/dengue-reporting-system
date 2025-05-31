@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CIDRS.Shared.Common.Api\CIDRS.Shared.Common.Api.csproj" />
+    <ProjectReference Include="..\CIDRS.Shared.Middleware.ExceptionHandler\CIDRS.Shared.Middleware.ExceptionHandler.csproj" />
+  </ItemGroup>
+
+</Project>

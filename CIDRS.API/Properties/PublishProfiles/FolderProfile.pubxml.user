@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\KAJANDAN\Desktop\CIDRS Publish</_PublishTargetUrl>
+    <History>True|2022-11-15T13:19:02.0590179Z;True|2022-11-15T18:38:20.9354272+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="CIDRS.Identity.Infrastructure.IdentityDataContext">
+      <Value>Server=SQL8002.site4now.net%3bUser ID=db_a8d4f6_cidrs_admin%3bPassword=VVijedan%4014%3bDatabase=db_a8d4f6_cidrs%3bMultipleActiveResultSets=true%3b</Value>
+    </EFMigrations>
+    <EFMigrations Include="CIDRS.Infrastructure.ApplicationDataContext">
+      <Value>Server=SQL8002.site4now.net%3bUser ID=db_a8d4f6_cidrs_admin%3bPassword=VVijedan%4014%3bDatabase=db_a8d4f6_cidrs%3bMultipleActiveResultSets=true%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

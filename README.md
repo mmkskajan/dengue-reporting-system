@@ -51,7 +51,7 @@ This project empowers citizens and authorities to actively participate in **earl
 - 🧾 **Report Review, Feedback & Closure Workflow**
 - 🔔 **Alert Notifications for Nearby Reports**
 - 🔒 **Role-based Access and Secure APIs**
-- 🧠 *(Optional)*: Use of GPT APIs for message classification or priority scoring
+
 
 ---
 
